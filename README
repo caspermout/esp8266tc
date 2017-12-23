@@ -1,0 +1,60 @@
+
+PATH=/opt/Espressif/crosstool-NG/builds/xtensa-lx106-elf/bin:$PATH
+
+
+export PATH=/opt/esp-open-sdk/xtensa-lx106-elf/bin:$PATH
+
+
+
+drivers 
+https://github.com/pellepl/spiflash_driver
+
+
+https://github.com/pellepl/spiffs/wiki/Integrate-spiffs
+https://github.com/pellepl/spiffs
+
+
+python ff.py 2>/dev/null | dd ibs=1k count=3k 2>/dev/null > ff-3m.bin
+
+# bijna 3m :P
+python ff.py 2>/dev/null | dd ibs=1 count=3125248 2>/dev/null > ff-3m.bin
+
+
+
+
+na erase is dit nodig
+sudo esptool --port /dev/ttyUSB0 write_flash 0x3FE000 blank.bin 0x3FC000 esp_init_data_default.bin 
+
+
+
+sudo screen -L /dev/ttyUSB0 115200
+
+
+
+
+
+/dev/ttyUSB0 is the serial port, while 57600 sets its baud rate into 57600bps.
+
+    Enable the CTS/RTS handshake
+
+1
+	
+bash> screen /dev/ttyUSB0 57600,ctsrts
+
+    Close the screen after you finish the debugging session
+
+Ctrl + A + k
+
+    View your serial port status (CTS/RTS/DTS/PE/RI..etc)
+
+Ctrl + A + i
+
+
+
+
+[casper@Flapdoos gistcontrollerc]$ sudo python ~/Development/thirdparty/nodemcu-pyflasher/esptool.py --port /dev/ttyUSB0 erase_flash
+
+
+
+
+

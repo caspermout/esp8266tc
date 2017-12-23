@@ -1,0 +1,8 @@
+
+
+
+make ; ./bin/temp_test  | grep , | grep -v 1000005, | grep -v '_r,' | python3 ../../gistkoelkast/pivotcsv.py | python ../../gistkoelkast/plot.py 1000000 1060000
+
+[casper@Flapdoos test]$ make ; ./bin/temp_test  | grep , | grep -v 1000005, | grep -v '_r,' | grep -v pid1val | python3 ../../gistkoelkast/pivotcsv.py | python ../../gistkoelkast/plot.py 1000000 1060000
+
+

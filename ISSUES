@@ -1,0 +1,114 @@
+
+
+current_stamp3 1502024890 system_get_free_heap_size 29480^M
+not datastart block bf^M
+cmd17 read error -1^M
+Open file /log.csv for write failed: 1^M
+current_stamp3 1502024895 system_get_free_heap_size 29480^M
+cmd17 error 4^M
+Open file /log.csv for write failed: 1^M
+current_stamp3 1502024900 system_get_free_heap_size 29480^M
+cmd17 error 63^M
+Open file /log.csv for write failed: 1^M
+current_stamp3 1502024905 system_get_free_heap_size 29480^M
+
+
+
+
+
+
+
+
+
+
+
+
+New connection: 0 - 84.22.114.252:57561
+Request done! 129 3fff52bd 125
+GET request
+URL '/last.csv'
+disconnect 3fff49c0
+Free request: 84.22.114.252:57561
+3ffea754 webserver's 84.22.114.252:57561 disconnect
+Connection 84.22.114.252:57561 not found
+disconnect_int 3fff49c0
+disconnect_int 3fff49c0 = -12
+New connection: 0 - 84.22.114.252:57562
+Request done! 168 3fff52e4 164
+GET request
+URL '/last.csv'
+current_stamp3 1502042806 system_get_free_heap_size 25768
+disconnect 3fff46b8
+Free request: 84.22.114.252:57562
+disconnect_int 3fff46b8
+disconnect_int 3fff46b8 = 0
+3ffea754 webserver's 84.22.114.252:57562 disconnect
+Connection 84.22.114.252:57562 not found
+current_stamp3 1502042811 system_get_free_heap_size 29848
+current_stamp3 1502042816 system_get_free_heap_size 29848
+kk dt -1b 300
+
+ ets Jan  8 2013,rst cause:2, boot mode:(1,6)
+
+
+ ets Jan  8 2013,rst cause:4, boot mode:(1,6)
+
+wdt reset
+
+
+
+
+
+
+
+kk dt -1b 367^M
+^M
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)^M
+^M
+
+
+
+
+
+
+New connection: 0 - 84.22.114.252:58038^M
+Request done! 168 3fff5064 164^M
+GET request^M
+URL '/last.csv'^M
+current_stamp3 1502051978 system_get_free_heap_size 25560^M
+kk dt 1 1800^M
+^M
+ ets Jan  8 2013,rst cause:2, boot mode:(3,6)^M
+^M
+load 0x40100000, len 27432, room 16 ^M
+tail 8^M
+chksum 0x4c^M
+load 0x3ffe8000, len 1956, room 0 ^M
+tail 4^M
+chksum 0xbe^M
+load 0x3ffe87b0, len 6804, room 4 ^M
+tail 0^M
+chksum 0x17^M
+csum 0x17^M
+
+
+
+
+
+		 rst cause  3 4: 40214b52 0
+		 rst cause  3 4: 40214b52 0
+		 rst cause  3 4: 40214bde 0
+		 rst cause  3 4: 40214bfa 0
+ 40214b7c   174 FUNC    GLOBAL DEFAULT    4 io_spi_readwritebyte
+
+
+
+
+
+
+
+
+
+
+	
+

@@ -1,0 +1,5 @@
+build
+firmware
+test/obj
+test/bin
+troep/sd*bin*
